@@ -1,0 +1,1 @@
+gh repo clone koppi/ttt && docker build -t koppi:ttt ttt && docker run -ti koppi:ttt
