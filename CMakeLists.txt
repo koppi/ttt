@@ -1,9 +1,5 @@
-cmake_minimum_required(VERSION 3.0.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.31.6)
 
-project(ttt VERSION 0.0.1 LANGUAGES C)
+project(ttt LANGUAGES C)
 
-file(GLOB_RECURSE sources *.c *.h)
-
-add_executable(${PROJECT_NAME} ${sources})
-
-install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+add_executable(${PROJECT_NAME} ttt.c)

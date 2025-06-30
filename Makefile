@@ -11,7 +11,7 @@ CPPFLAGS      += $(CFG_OPTS)
 
 all: ttt
 
-ttt.o: GNUMakefile ttt.c
+ttt.o: Makefile ttt.c
 
 clean:
 	-@$(RM) ttt ttt.o
