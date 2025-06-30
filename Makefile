@@ -4,7 +4,7 @@
 # Set CC and CFGLAGS in your local environment for a suitable
 # compiler (tcc?) and CFLAGS (-Os -W -Wall -Werror)
 
-VERSION        = 0.0.1
+VERSION        = 0.0.2
 CFG_OPTS      ?= 
 CC            ?= @gcc
 CPPFLAGS      += $(CFG_OPTS)
