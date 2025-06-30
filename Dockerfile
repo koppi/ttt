@@ -1,8 +1,8 @@
 FROM alpine:3.5
 
-RUN apk add --no-cache gcc musl-dev make; mkdir /var/games
+RUN apk add --no-cache gcc musl-dev make
 
-WORKDIR .
+WORKDIR /
 ADD . /ttt
 RUN cd ttt/; DESTDIR=/usr make all install
-CMD ttt
+CMD ["ttt"]
