@@ -24,6 +24,7 @@ int main() { char b[9] = {N}, *res, l[32], p = X, w = N; int m, t = 1; B;
       if (!(res == l &&
             (sscanf(l, "%d", &m) != 1 || m < 0 || m > 8 || b[m] != N)))
         break;
+      P("Invalid move. Try again.\n");
     };
     t++; b[m] = p; B; p = (p == X) ? O : X; w = ck(b);
     if (w == C) P("\ndraw.\n"); else if (w != N) P("\n%c won.\n", w);
